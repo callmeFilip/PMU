@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- Google Maps Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <!-- Zoom In Button -->
+    <Button
+            android:id="@+id/zoomIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom In"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <!-- Zoom Out Button -->
+    <Button
+            android:id="@+id/zoomOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom Out"
+            android:layout_below="@id/zoomIN"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <!-- Hybrid Button -->
+    <Button
+            android:id="@+id/hybridBUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hybrid"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/holo_green_light"/>
+
+    <!-- Normal Button -->
+    <Button
+            android:id="@+id/normalBUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:layout_toEndOf="@id/hybridBUT"
+            android:layout_alignBaseline="@id/hybridBUT"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@android:color/holo_green_light"/>
+
+    <!-- Satellite Button -->
+    <Button
+            android:id="@+id/satelliteBUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satellite"
+            android:layout_toEndOf="@id/normalBUT"
+            android:layout_alignBaseline="@id/hybridBUT"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@android:color/holo_green_light"/>
+
+    <!-- Terrain Button -->
+    <Button
+            android:id="@+id/terrainBUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terrain"
+            android:layout_toEndOf="@id/satelliteBUT"
+            android:layout_alignBaseline="@id/hybridBUT"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@android:color/holo_green_light"/>
+
+    <!-- TU Sofia Button -->
+    <Button
+            android:id="@+id/tusBUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to TU Sofia"
+            android:layout_below="@id/hybridBUT"
+            android:layout_alignStart="@id/hybridBUT"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+
+    <!-- Back Button -->
+    <Button
+            android:id="@+id/BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_red_light"/>
+
+    <Button
+            android:id="@+id/capitalLibraryBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_library"
+            android:layout_below="@id/tusBUT"
+            android:layout_alignStart="@id/hybridBUT"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+
+    <Button
+            android:id="@+id/sofiaUniversityBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_university"
+            android:layout_below="@id/capitalLibraryBut"
+            android:layout_alignStart="@id/hybridBUT"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+
+    <Button
+            android:id="@+id/theaterBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_theater"
+            android:layout_below="@id/sofiaUniversityBut"
+            android:layout_alignStart="@id/hybridBUT"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"/>
+
+</RelativeLayout>

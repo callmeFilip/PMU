@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- Google Maps Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/location_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    <!-- Zoom In Button -->
+    <Button
+            android:id="@+id/zoomIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="+"
+            android:textColor="#ffffff" />
+
+    <!-- Zoom Out Button -->
+    <Button
+            android:id="@+id/zoomOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="#ffffff" />
+
+    <!-- TU Sofia Button -->
+    <Button
+            android:id="@+id/tusofia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="ТУ София"
+            android:textColor="#ffffff" />
+
+    <!-- UNSS Button -->
+    <Button
+            android:id="@+id/unss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tusofia"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="УНСС"
+            android:textColor="#ffffff" />
+
+    <!-- LTY Button -->
+    <Button
+            android:id="@+id/lty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/unss"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="ЛТУ"
+            android:textColor="#ffffff" />
+
+    <!-- NSA Button -->
+    <Button
+            android:id="@+id/nsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lty"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="НСА"
+            android:textColor="#ffffff" />
+
+    <!-- Line Button -->
+    <Button
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Line"
+            android:textColor="#ffffff" />
+
+    <!-- Polygon Button -->
+    <Button
+            android:id="@+id/polygon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/line"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Polygon"
+            android:textColor="#ffffff" />
+
+    <!-- Back Button -->
+    <Button
+            android:id="@+id/BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Back"
+            android:textColor="#ffffff" />
+
+    <Button
+            android:id="@+id/sofiaLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nsa"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Sofia Library"
+            android:textColor="#ffffff" />
+
+    <!-- Sofia University Button -->
+    <Button
+            android:id="@+id/sofiaUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sofiaLibrary"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Sofia University"
+            android:textColor="#ffffff" />
+
+    <!-- Ivan Vazov Theater Button -->
+    <Button
+            android:id="@+id/ivanVazov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sofiaUniversity"
+            android:background="#359c5e"
+            android:padding="8dp"
+            android:text="Ivan Vazov Theater"
+            android:textColor="#ffffff" />
+
+</RelativeLayout>
