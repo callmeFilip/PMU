@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activities.AddUserActivity">
+
+    <!-- User Name Label -->
+    <TextView
+        android:id="@+id/labelUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/userNameInput"
+        android:layout_marginStart="20dp"/>
+
+    <!-- User Name Input Field -->
+    <EditText
+        android:id="@+id/userNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="50dp"/>
+
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/passwordInput"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/userNameInput"
+        app:layout_constraintStart_toEndOf="@id/labelPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="50dp"/>
+
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/addUserButton"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Add User Button -->
+    <Button
+        android:id="@+id/addUserButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ADD USER"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintStart_toEndOf="@id/clearButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"/>
+
+    <!-- Back Button (Centered) -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/clearButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

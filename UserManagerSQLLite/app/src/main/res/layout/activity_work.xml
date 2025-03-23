@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WorkActivity">
+
+    <!-- Title Displaying Users -->
+    <TextView
+        android:id="@+id/ShowView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User List"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/searchBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Show All Users Button -->
+    <Button
+        android:id="@+id/show_users"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SHOW ALL USERS"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/add_user"
+        android:layout_margin="16dp"/>
+
+    <!-- Add User Button -->
+    <Button
+        android:id="@+id/add_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ADD USER"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/show_users"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Delete User Button -->
+    <Button
+        android:id="@+id/delete_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="DELETE USER"
+        app:layout_constraintTop_toBottomOf="@id/show_users"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        android:layout_margin="16dp"/>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        app:layout_constraintTop_toBottomOf="@id/add_user"
+        app:layout_constraintStart_toEndOf="@id/delete_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+
+    <!-- Search Box for Username -->
+    <AutoCompleteTextView
+        android:id="@+id/searchBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/delete_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- User List RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userListRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ShowView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/logout"
+        android:padding="10dp"
+        android:background="#F0F0F0"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:contentDescription="App Logo"/>
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/labelUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/userNameBOX"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/userNameBOX"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Username"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/labelUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/labelPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/PasswordBOX"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/PasswordBOX"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/userNameBOX"
+        app:layout_constraintStart_toEndOf="@id/labelPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Phone Number Label -->
+    <TextView
+        android:id="@+id/labelPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/phoneBOX"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Phone Number Input Field -->
+    <EditText
+        android:id="@+id/phoneBOX"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/PasswordBOX"
+        app:layout_constraintStart_toEndOf="@id/labelPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/EmailBOX"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/EmailBOX"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/phoneBOX"
+        app:layout_constraintStart_toEndOf="@id/labelEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Address Label -->
+    <TextView
+        android:id="@+id/labelAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/AddressBox"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Address Input Field -->
+    <EditText
+        android:id="@+id/AddressBox"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Address"
+        android:inputType="textPostalAddress"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/EmailBOX"
+        app:layout_constraintStart_toEndOf="@id/labelAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Age Label -->
+    <TextView
+        android:id="@+id/labelAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/ageBOX"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Age Input Field -->
+    <EditText
+        android:id="@+id/ageBOX"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@id/AddressBox"
+        app:layout_constraintStart_toEndOf="@id/labelAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/LoginBUT"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageBOX"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
